@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muditel - Innovative Solutions</title>
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/muditel-logo.jpg" alt="Muditel Logo" class="logo">
+                </a>
+
+                <!-- Search Form - Moved to left -->
+                <form class="search-form d-none d-lg-block">
+                    <div class="input-group">
+                        <input type="search" class="search-input form-control" placeholder="Search products...">
+                        <button class="search-btn" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item dropdown has-megamenu" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-controls="solutions-megamenu">
+                                Solutions <i class="fas fa-chevron-down ms-1"></i>
+                            </a>
+                            <div class="dropdown-menu megamenu" id="solutions-megamenu" role="menu" aria-labelledby="navbarNav">
+                                <div class="container">
+                                    <div class="megamenu-header">
+                                        <h5>Our Solutions</h5>
+                                        <p>Discover our comprehensive range of telecommunications and energy solutions</p>
+                                    </div>
+                                    <div class="row g-4">
+                                        <!-- Fiber Optic -->
+                                        <div class="col-lg-3">
+                                            <div class="megamenu-section">
+                                                <a href="solutions/fiber-optic.html" class="category-link">
+                                                    <div class="category-image">
+                                                        <img src="assets/img/fiber.jpg" alt="Fiber Optic">
+                                                        <div class="category-overlay">
+                                                            <i class="fas fa-network-wired"></i>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="megamenu-title">
+                                                        <i class="fas fa-network-wired me-2"></i>
+                                                        Fiber Optic
+                                                    </h6>
+                                                </a>
+                                                <ul class="megamenu-list">
+                                                    <li>
+                                                        <a href="solutions/fiber-optic.html#cables">
+                                                            <span class="menu-icon"><i class="fas fa-angle-right"></i></span>
+                                                            <span class="menu-text">Fiber Cables</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="solutions/fiber-optic.html#connectivity">
+                                                            <span class="menu-icon"><i class="fas fa-angle-right"></i></span>
+                                                            <span class="menu-text">Connectivity</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Energy -->
+                                        <div class="col-lg-3">
+                                            <div class="megamenu-section">
+                                                <a href="solutions/energy.html" class="category-link">
+                                                    <div class="category-image">
+                                                        <img src="assets/img/energy.jpg" alt="Energy">
+                                                        <div class="category-overlay">
+                                                            <i class="fas fa-bolt"></i>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="megamenu-title">
+                                                        <i class="fas fa-bolt me-2"></i>
+                                                        Energy
+                                                    </h6>
+                                                </a>
+                                                <ul class="megamenu-list">
+                                                    <li>
+                                                        <a href="solutions/energy.html#power-systems">
+                                                            <span class="menu-icon"><i class="fas fa-angle-right"></i></span>
+                                                            <span class="menu-text">Power Systems</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="solutions/energy.html#energy-management">
+                                                            <span class="menu-icon"><i class="fas fa-angle-right"></i></span>
+                                                            <span class="menu-text">Energy Management</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Radio Frequency -->
+                                        <div class="col-lg-3">
+                                            <div class="megamenu-section">
+                                                <a href="solutions/radio-frequency.html" class="category-link">
+                                                    <div class="category-image">
+                                                        <img src="assets/img/rf.jpg" alt="Radio Frequency">
+                                                        <div class="category-overlay">
+                                                            <i class="fas fa-signal"></i>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="megamenu-title">
+                                                        <i class="fas fa-signal me-2"></i>
+                                                        Radio Frequency
+                                                    </h6>
+                                                </a>
+                                                <ul class="megamenu-list">
+                                                    <li>
+                                                        <a href="solutions/radio-frequency.html#antennas">
+                                                            <span class="menu-icon"><i class="fas fa-angle-right"></i></span>
+                                                            <span class="menu-text">RF Antennas</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="solutions/radio-frequency.html#wireless">
+                                                            <span class="menu-icon"><i class="fas fa-angle-right"></i></span>
+                                                            <span class="menu-text">Wireless Solutions</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Telecom Tower -->
+                                        <div class="col-lg-3">
+                                            <div class="megamenu-section">
+                                                <a href="solutions/telecom-tower.html" class="category-link">
+                                                    <div class="category-image">
+                                                        <img src="assets/img/tower.jpg" alt="Telecom Tower">
+                                                        <div class="category-overlay">
+                                                            <i class="fas fa-broadcast-tower"></i>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="megamenu-title">
+                                                        <i class="fas fa-broadcast-tower me-2"></i>
+                                                        Telecom Tower
+                                                    </h6>
+                                                </a>
+                                                <ul class="megamenu-list">
+                                                    <li>
+                                                        <a href="solutions/telecom-tower.html#infrastructure">
+                                                            <span class="menu-icon"><i class="fas fa-angle-right"></i></span>
+                                                            <span class="menu-text">Tower Infrastructure</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="solutions/telecom-tower.html#maintenance">
+                                                            <span class="menu-icon"><i class="fas fa-angle-right"></i></span>
+                                                            <span class="menu-text">Tower Maintenance</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Networking -->
+                                        <div class="col-lg-3">
+                                            <div class="megamenu-section">
+                                                <a href="solutions/networking.html" class="category-link">
+                                                    <div class="category-image">
+                                                        <img src="assets/img/network.jpg" alt="Networking">
+                                                        <div class="category-overlay">
+                                                            <i class="fas fa-server"></i>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="megamenu-title">
+                                                        <i class="fas fa-server me-2"></i>
+                                                        Networking
+                                                    </h6>
+                                                </a>
+                                                <ul class="megamenu-list">
+                                                    <li>
+                                                        <a href="solutions/networking.html#infrastructure">
+                                                            <span class="menu-icon"><i class="fas fa-angle-right"></i></span>
+                                                            <span class="menu-text">Network Infrastructure</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="solutions/networking.html#security">
+                                                            <span class="menu-icon"><i class="fas fa-angle-right"></i></span>
+                                                            <span class="menu-text">Network Security</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Audio Visual -->
+                                        <div class="col-lg-3">
+                                            <div class="megamenu-section">
+                                                <a href="solutions/audio-visual.html" class="category-link">
+                                                    <div class="category-image">
+                                                        <img src="assets/img/av.jpg" alt="Audio Visual">
+                                                        <div class="category-overlay">
+                                                            <i class="fas fa-tv"></i>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="megamenu-title">
+                                                        <i class="fas fa-tv me-2"></i>
+                                                        Audio Visual
+                                                    </h6>
+                                                </a>
+                                                <ul class="megamenu-list">
+                                                    <li>
+                                                        <a href="solutions/audio-visual.html#systems">
+                                                            <span class="menu-icon"><i class="fas fa-angle-right"></i></span>
+                                                            <span class="menu-text">AV Systems</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="solutions/audio-visual.html#integration">
+                                                            <span class="menu-icon"><i class="fas fa-angle-right"></i></span>
+                                                            <span class="menu-text">AV Integration</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- HDPE Solutions -->
+                                        <div class="col-lg-3">
+                                            <div class="megamenu-section">
+                                                <a href="solutions/hdpe.html" class="category-link">
+                                                    <div class="category-image">
+                                                        <img src="assets/img/hdpe.jpg" alt="HDPE Solutions">
+                                                        <div class="category-overlay">
+                                                            <i class="fas fa-industry"></i>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="megamenu-title">
+                                                        <i class="fas fa-industry me-2"></i>
+                                                        HDPE Solutions
+                                                    </h6>
+                                                </a>
+                                                <ul class="megamenu-list">
+                                                    <li>
+                                                        <a href="solutions/hdpe.html#pipes">
+                                                            <span class="menu-icon"><i class="fas fa-angle-right"></i></span>
+                                                            <span class="menu-text">HDPE Pipes</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="solutions/hdpe.html#fittings">
+                                                            <span class="menu-icon"><i class="fas fa-angle-right"></i></span>
+                                                            <span class="menu-text">HDPE Fittings</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Full Solution -->
+                                        <div class="col-lg-3">
+                                            <div class="megamenu-section">
+                                                <a href="solutions/full-solution.html" class="category-link">
+                                                    <div class="category-image">
+                                                        <img src="assets/img/solution.jpg" alt="Full Solution">
+                                                        <div class="category-overlay">
+                                                            <i class="fas fa-puzzle-piece"></i>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="megamenu-title">
+                                                        <i class="fas fa-puzzle-piece me-2"></i>
+                                                        Full Solution
+                                                    </h6>
+                                                </a>
+                                                <ul class="megamenu-list">
+                                                    <li>
+                                                        <a href="solutions/full-solution.html#end-to-end">
+                                                            <span class="menu-icon"><i class="fas fa-angle-right"></i></span>
+                                                            <span class="menu-text">End-to-End Solutions</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="solutions/full-solution.html#custom-integration">
+                                                            <span class="menu-icon"><i class="fas fa-angle-right"></i></span>
+                                                            <span class="menu-text">Custom Integration</span>
+                                                            <span class="badge bg-primary ms-2">Featured</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="megamenu-footer">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-8">
+                                                <p class="mb-0">Need a custom solution? Contact our experts for personalized assistance.</p>
+                                            </div>
+                                            <div class="col-md-4 text-md-end">
+                                                <a href="#contact" class="btn btn-primary btn-sm">Get Expert Help</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- Mobile Search Form -->
+                    <form class="search-form d-lg-none mb-3">
+                        <div class="input-group">
+                            <input type="search" class="search-input form-control" placeholder="Search products...">
+                            <button class="search-btn" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Contact Button -->
+                    <a href="#contact" class="btn contact-btn">Get a Quote</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <header class="entry-header" style="background-image: url('assets/img/photo1.webp');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>Pioneering Fiber Optic and Energy Solutions for Tomorrow's Connectivity</h1>
+                    <p>Empowering businesses with cutting-edge telecommunications infrastructure and sustainable energy solutions for a connected future.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn hero-btn hero-btn-primary">Get Started</a>
+                        <a href="#solutions" class="btn hero-btn hero-btn-secondary">Explore Solutions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Products -->
+    <section class="featured-products" id="products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="row">
+                <!-- Product Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/img/product1.jpg" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Noise-Cancelling Headphones</h5>
+                            <p class="card-text">Experience immersive sound without distractions.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$299.99</span>
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/img/product2.jpg" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Home Speaker</h5>
+                            <p class="card-text">Control your home with voice commands.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$129.99</span>
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/img/product3.jpg" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Fitness Tracker</h5>
+                            <p class="card-text">Monitor your health and stay active.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$79.99</span>
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/img/product4.jpg" class="card-img-top" alt="Product 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Wireless Earbuds</h5>
+                            <p class="card-text">Compact and powerful sound on the go.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$49.99</span>
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/img/product5.jpg" class="card-img-top" alt="Product 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Action Camera</h5>
+                            <p class="card-text">Capture every moment in stunning detail.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$199.99</span>
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/img/product6.jpg" class="card-img-top" alt="Product 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Gaming Laptop</h5>
+                            <p class="card-text">Unleash your gaming potential with top performance.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$1,499.99</span>
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2>Our Solutions</h2>
+            <div class="row">
+                <!-- Fiber Optic -->
+                <div class="col-md-3 mb-4">
+                    <div class="category-card">
+                        <i class="fas fa-network-wired"></i>
+                        <h3><a href="solutions/fiber-optic.html">Fiber Optic</a></h3>
+                        <p>High-speed fiber optic cables and connectivity solutions</p>
+                        <a href="solutions/fiber-optic.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+    
+                <!-- Energy -->
+                <div class="col-md-3 mb-4">
+                    <div class="category-card">
+                        <i class="fas fa-bolt"></i>
+                        <h3><a href="solutions/energy.html">Energy</a></h3>
+                        <p>Power systems and energy management solutions</p>
+                        <a href="solutions/energy.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+    
+                <!-- Radio Frequency -->
+                <div class="col-md-3 mb-4">
+                    <div class="category-card">
+                        <i class="fas fa-signal"></i>
+                        <h3><a href="solutions/radio-frequency.html">Radio Frequency</a></h3>
+                        <p>RF equipment and wireless communication solutions</p>
+                        <a href="solutions/radio-frequency.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+    
+                <!-- Telecom Tower -->
+                <div class="col-md-3 mb-4">
+                    <div class="category-card">
+                        <i class="fas fa-broadcast-tower"></i>
+                        <h3><a href="solutions/telecom-tower.html">Telecom Tower</a></h3>
+                        <p>Telecommunications infrastructure and tower solutions</p>
+                        <a href="solutions/telecom-tower.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+    
+                <!-- Networking -->
+                <div class="col-md-3 mb-4">
+                    <div class="category-card">
+                        <i class="fas fa-server"></i>
+                        <h3><a href="solutions/networking.html">Networking</a></h3>
+                        <p>Enterprise networking and infrastructure solutions</p>
+                        <a href="solutions/networking.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+    
+                <!-- HDPE -->
+                <div class="col-md-3 mb-4">
+                    <div class="category-card">
+                        <i class="fas fa-circle-nodes"></i>
+                        <h3><a href="solutions/hdpe.html">HDPE</a></h3>
+                        <p>High-density polyethylene pipes and ducting solutions</p>
+                        <a href="solutions/hdpe.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+    
+                <!-- Audio Visual -->
+                <div class="col-md-3 mb-4">
+                    <div class="category-card">
+                        <i class="fas fa-tv"></i>
+                        <h3><a href="solutions/audio-visual.html">Audio Visual</a></h3>
+                        <p>Professional audio and visual equipment solutions</p>
+                        <a href="solutions/audio-visual.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+    
+                <!-- Full Solution -->
+                <div class="col-md-3 mb-4">
+                    <div class="category-card">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <h3><a href="solutions/full-solution.html">Full Solution</a></h3>
+                        <p>Comprehensive end-to-end telecommunications solutions</p>
+                        <a href="solutions/full-solution.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Reviews Section -->
+    <section class="reviews-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">What Our Clients Say</h2>
+                <p class="text-muted">Trusted by leading companies worldwide</p>
+            </div>
+            
+            <div class="reviews-slider">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="review-profile">
+                                    <div class="review-avatar">
+                                        <img src="assets/img/avatar1.jpg" alt="Client Avatar">
+                                    </div>
+                                    <div class="review-meta">
+                                        <h5 class="reviewer-name">John Smith</h5>
+                                        <p class="reviewer-title">CTO, TechCorp</p>
+                                    </div>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>"Muditel's fiber optic solutions transformed our network infrastructure. Their expertise and professional service exceeded our expectations."</p>
+                            </div>
+                            <div class="review-footer">
+                                <span class="review-date">March 2024</span>
+                                <div class="company-logo">
+                                    <img src="assets/img/company1.png" alt="Company Logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="review-card featured">
+                            <div class="review-header">
+                                <div class="review-profile">
+                                    <div class="review-avatar">
+                                        <img src="assets/img/avatar2.jpg" alt="Client Avatar">
+                                    </div>
+                                    <div class="review-meta">
+                                        <h5 class="reviewer-name">Sarah Johnson</h5>
+                                        <p class="reviewer-title">Operations Director, NetworX</p>
+                                    </div>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>"The team at Muditel provided exceptional support throughout our telecom tower installation. Their attention to detail and commitment to quality is outstanding."</p>
+                            </div>
+                            <div class="review-footer">
+                                <span class="review-date">April 2024</span>
+                                <div class="company-logo">
+                                    <img src="assets/img/company2.png" alt="Company Logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="review-profile">
+                                    <div class="review-avatar">
+                                        <img src="assets/img/avatar3.jpg" alt="Client Avatar">
+                                    </div>
+                                    <div class="review-meta">
+                                        <h5 class="reviewer-name">Michael Chen</h5>
+                                        <p class="reviewer-title">Project Manager, GlobalTech</p>
+                                    </div>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>"We've been working with Muditel for our networking solutions for over 3 years. Their reliability and technical expertise make them our go-to partner."</p>
+                            </div>
+                            <div class="review-footer">
+                                <span class="review-date">May 2024</span>
+                                <div class="company-logo">
+                                    <img src="assets/img/company3.png" alt="Company Logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-stats text-center mt-5">
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="stat-item">
+                            <h3 class="stat-number">500+</h3>
+                            <p class="stat-label">Happy Clients</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-item">
+                            <h3 class="stat-number">98%</h3>
+                            <p class="stat-label">Satisfaction Rate</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-item">
+                            <h3 class="stat-number">15+</h3>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-item">
+                            <h3 class="stat-number">1000+</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Column 1 -->
+                <div class="col-md-3 mb-4">
+                    <img src="assets/img/muditel-logo-white.jpg" alt="Muditel Logo" class="footer-logo">
+                    <p>Your premier online shopping destination. We offer quality products at great prices.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Footer Column 2 -->
+                <div class="col-md-3 mb-4">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Help & FAQs</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- Footer Column 3 -->
+                <div class="col-md-3 mb-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Store Street, City, Country</p>
+                    <p><i class="fas fa-phone"></i> (+123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> support@muditel.com</p>
+                </div>
+                <!-- Footer Column 4 (Newsletter) -->
+                <div class="col-md-3 mb-4">
+                    <h5>Join Our Newsletter</h5>
+                    <p>Stay updated with our latest products and offers.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-4" style="border-color: #444;">
+            <p class="text-center">&copy; 2024 Muditel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

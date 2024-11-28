@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Muditel</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    
+    <style>
+        .products-hero {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 120px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .products-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
+            z-index: 1;
+        }
+
+        .products-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .category-filters {
+            position: sticky;
+            top: 80px;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .filter-btn {
+            border: none;
+            background: transparent;
+            color: var(--primary-color);
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-card .card-img-wrapper {
+            position: relative;
+            padding-top: 75%;
+            overflow: hidden;
+        }
+
+        .product-card .card-img-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .card-img-top {
+            transform: scale(1.1);
+        }
+
+        .product-card .card-body {
+            padding: 1.5rem;
+        }
+
+        .product-card .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .product-card .card-text {
+            color: #6c757d;
+            margin-bottom: 1.25rem;
+        }
+
+        .product-card .btn-primary {
+            border-radius: 25px;
+            padding: 0.5rem 1.5rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .product-category {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--primary-color);
+            z-index: 2;
+        }
+
+        .product-specs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .spec-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            color: #6c757d;
+        }
+
+        .spec-item i {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header will be included via JavaScript -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <header class="products-hero" style="background-image: url('assets/img/products-hero.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-4">Our Products</h1>
+                    <p class="lead mb-4">Discover our comprehensive range of cutting-edge telecommunications and infrastructure solutions designed to meet your business needs.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#products" class="btn btn-light btn-lg">Explore Products</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Request Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products-section py-5" id="products">
+        <div class="container">
+            <!-- Product Categories -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="category-filters text-center mb-4" data-aos="fade-up">
+                        <div id="category-buttons">
+                            <!-- Categories will be loaded dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="row g-4" id="products-grid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer will be included via JavaScript -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/products-data.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Load products when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            loadCategories();
+            loadProducts('all');
+        });
+
+        function loadCategories() {
+            const categoryButtons = document.getElementById('category-buttons');
+            
+            // Add "All" category
+            const allButton = document.createElement('button');
+            allButton.className = 'filter-btn active';
+            allButton.setAttribute('data-filter', 'all');
+            allButton.innerHTML = '<i class="fas fa-th-large me-2"></i> All Products';
+            allButton.addEventListener('click', () => filterProducts('all'));
+            categoryButtons.appendChild(allButton);
+
+            // Add other categories
+            productsData.categories.forEach(category => {
+                const button = document.createElement('button');
+                button.className = 'filter-btn';
+                button.setAttribute('data-filter', category.id);
+                button.innerHTML = `<i class="${category.icon} me-2"></i> ${category.name}`;
+                button.addEventListener('click', () => filterProducts(category.id));
+                categoryButtons.appendChild(button);
+            });
+        }
+
+        function loadProducts(category) {
+            const productsGrid = document.getElementById('products-grid');
+            productsGrid.innerHTML = '';
+
+            const products = productsData.products.filter(product => 
+                category === 'all' || product.category === category
+            );
+
+            products.forEach((product, index) => {
+                const delay = index * 100;
+                const productCard = createProductCard(product, delay);
+                productsGrid.appendChild(productCard);
+            });
+        }
+
+        function createProductCard(product, delay) {
+            const col = document.createElement('div');
+            col.className = 'col-md-6 col-lg-4 product-item';
+            col.setAttribute('data-category', product.category);
+            col.setAttribute('data-aos', 'fade-up');
+            col.setAttribute('data-aos-delay', delay);
+
+            col.innerHTML = `
+                <div class="product-card">
+                    <div class="card-img-wrapper">
+                        <span class="product-category">${getCategoryName(product.category)}</span>
+                        <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">${product.name}</h5>
+                        <p class="card-text">${product.description}</p>
+                        <ul class="product-features">
+                            ${product.features.map(feature => `
+                                <li><i class="fas fa-check"></i> ${feature}</li>
+                            `).join('')}
+                        </ul>
+                        <div class="product-specs">
+                            ${product.specs.map(spec => `
+                                <div class="spec-item">
+                                    <i class="${spec.icon}"></i>
+                                    <span>${spec.text}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <a href="#contact" class="btn btn-outline-primary">Request Quote</a>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            return col;
+        }
+
+        function filterProducts(category) {
+            // Update active button
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-filter') === category) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Load filtered products
+            loadProducts(category);
+        }
+
+        function getCategoryName(categoryId) {
+            const category = productsData.categories.find(cat => cat.id === categoryId);
+            return category ? category.name : categoryId;
+        }
+    </script>
+</body>
+</html>

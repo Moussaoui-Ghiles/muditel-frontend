@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Your store description for SEO">
+    <meta property="og:title" content="Muditel | Your Tagline">
+    <meta property="og:description" content="Muditel - Your store description for social sharing">
+    <meta property="og:image" content="your-social-share-image.jpg">
+    <title>Muditel | Your Tagline</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d1cdb38ebb.js" crossorigin="anonymous"></script>
+
+    <!-- Google Language Translator -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,es,fr,de,it,pt,ja,ko,zh-CN',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- WooCommerce Integration -->
+    <link rel="stylesheet" href="path-to-woocommerce.css">
+
+    <!-- Custom Fonts -->
+    <style id='wp-fonts-local'>
+        @font-face {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 300 900;
+            font-display: fallback;
+            src: url('assets/fonts/Inter-VariableFont.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: Cardo;
+            font-style: normal;
+            font-weight: 400;
+            font-display: fallback;
+            src: url('assets/fonts/cardo_normal_400.woff2') format('woff2');
+        }
+    </style>
+
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #007bff;    /* Bright blue */
+            --secondary-color: #000000;  /* Black */
+            --text-light: #ffffff;       /* White */
+            --text-dark: #000000;        /* Black */
+            --gradient-primary: linear-gradient(150deg, #000000 0%, #007bff 100%);
+            --blue-dark: #0056b3;        /* Darker blue for hover states */
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Utility Navigation */
+        .utility-navigation {
+            background: var(--gradient-primary);
+            color: var(--text-light);
+            padding: 10px 0;
+        }
+
+        .utility-navigation__wrap {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: var(--secondary-color);
+            margin: 5px 0;
+            transition: all 0.3s;
+        }
+
+        /* Main Header */
+        .site-header {
+            background: var(--text-light);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .site-header__wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Navigation */
+        .main-navigation ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .main-navigation a {
+            text-decoration: none;
+            color: var(--text-dark);
+        }
+
+        .main-navigation a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .entry-header {
+            background-image: url('assets/img/photo1.webp');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            position: relative;
+            color: var(--text-light);
+            text-align: center;
+        }
+
+        .entry-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .entry-header__wrapper {
+            position: relative;
+            z-index: 1;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .entry-header h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .entry-header p {
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+
+        /* Product Categories */
+        .solution-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .solution-card {
+            background: var(--gradient-primary);
+            color: var(--text-light);
+            padding: 30px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Featured Products */
+        .product-cards {
+            max-width: 1400px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .product-cards__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        /* Video Section */
+        .videos-section {
+            background: #f5f5f5;
+            padding: 60px 0;
+        }
+
+        .videos-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .video-card {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .video-card iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: var(--secondary-color);
+            color: var(--text-light);
+            padding: 40px 0;
+        }
+
+        .site-footer__wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        .social-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: var(--text-light);
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .main-navigation ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--text-light);
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                border-top: 2px solid var(--primary-color);
+            }
+
+            .main-navigation.active ul {
+                display: flex;
+            }
+        }
+
+        /* Update footer styles */
+        .site-footer {
+            background-image: url('assets/img/footer-bg.svg');
+            background-color: var(--secondary-color);
+            color: var(--text-light);
+            padding: 40px 0;
+        }
+
+        .site-footer__column-signup {
+            text-align: center;
+        }
+
+        .site-footer__column-signup-icon {
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+
+        .site-footer__column-backtotop {
+            text-align: center;
+            margin-top: 2em;
+        }
+
+        .site-footer__column-backtotop a {
+            color: var(--text-light);
+            text-decoration: none;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .site-footer__column-backtotop i {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        /* Add responsive table styles */
+        @media screen and (min-width: 1024px) {
+            .wp-block-table {
+                overflow-x: hidden;
+            }
+        }
+
+        /* Add superscript styles */
+        sup {
+            position: relative;
+            font-size: 40%;
+            line-height: 0;
+            vertical-align: baseline;
+            top: -1.2em;
+        }
+
+        /* Product Card Styles */
+        .product-card {
+            background: var(--text-light);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            border: 1px solid var(--secondary-color);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .add-to-cart {
+            background: var(--gradient-primary);
+            color: var(--text-light);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .add-to-cart:hover {
+            background: var(--blue-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Newsletter Form Styles */
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .newsletter-form input[type="email"] {
+            padding: 10px;
+            border: 1px solid var(--secondary-color);
+            border-radius: 4px;
+        }
+
+        .newsletter-form input[type="email"]:focus {
+            border-color: var(--primary-color);
+            outline-color: var(--primary-color);
+        }
+
+        .newsletter-form button {
+            background: var(--gradient-primary);
+            color: var(--text-light);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .newsletter-form button:hover {
+            background: var(--blue-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Footer Link Styles */
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .footer-column a:hover {
+            opacity: 0.8;
+            color: var(--primary-color);
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--gradient-primary);
+            color: var(--text-light);
+            text-decoration: none;
+            border-radius: 4px;
+            transition: transform 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            background: var(--blue-dark);
+        }
+
+        /* Search Form */
+        .search-form button {
+            background: var(--secondary-color);
+            color: var(--text-light);
+        }
+
+        .search-form button:hover {
+            background: var(--primary-color);
+        }
+
+        .custom-logo-link img {
+            max-width: 200px;
+            height: auto;
+        }
+        
+        .footer-logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .site-branding {
+            max-width: 200px;
+            padding: 10px 0;
+        }
+
+        .custom-logo-link {
+            display: block;
+        }
+
+        .custom-logo-link img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Footer logo styles */
+        .footer-logo {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+            /* For dark backgrounds */
+            filter: brightness(1.2);
+        }
+
+        /* Temporary debugging styles - remove after fixing */
+        .site-branding {
+            border: 1px solid red; /* Temporary - to see the container */
+        }
+        
+        .custom-logo-link {
+            border: 1px solid blue; /* Temporary - to see the link area */
+        }
+
+        /* Logo styling */
+        .site-branding {
+            max-width: 70px; /* Reduced from 100px */
+            padding: 5px 0;
+        }
+
+        .custom-logo-link {
+            display: block;
+        }
+
+        .custom-logo-link img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+        
+        /* Footer logo */
+        .footer-logo {
+            width: 70px; /* Reduced from 100px to match header */
+            height: auto;
+            display: block;
+            margin-bottom: 12px;
+            filter: brightness(1.2);
+        }
+
+        /* Remove temporary debugging borders */
+        .site-branding {
+            border: none;
+        }
+        
+        .custom-logo-link {
+            border: none;
+        }
+
+        /* Remove any duplicate or conflicting styles */
+        .custom-logo-link img,
+        .footer-logo {
+            max-width: none;
+        }
+
+        /* Update the solution-cards section */
+        .solution-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .solution-card {
+            position: relative;
+            overflow: hidden;
+            padding: 0;  /* Remove padding to allow image to fill */
+        }
+
+        .category-image {
+            width: 100%;
+            height: 200px;  /* Fixed height for consistency */
+            object-fit: cover;  /* This will ensure the image covers the area without distortion */
+            margin-bottom: 15px;
+        }
+
+        .solution-card h3,
+        .solution-card p,
+        .solution-card .button {
+            padding: 0 20px;  /* Add padding to text elements */
+        }
+
+        .solution-card .button {
+            margin: 15px 20px 20px;  /* Add margin to button */
+        }
+    </style>
+
+    <!-- Add WooCommerce specific styles -->
+    <style>
+        .woocommerce form .form-row .required { 
+            visibility: visible; 
+        }
+    </style>
+
+    <!-- Add WooCommerce Scripts -->
+    <script src="path-to-woocommerce/jquery.min.js"></script>
+    <script src="path-to-woocommerce/add-to-cart.min.js"></script>
+    <script src="path-to-woocommerce/woocommerce.min.js"></script>
+</head>
+<body>
+    <header id="masthead" class="site-header">
+        <!-- Utility Navigation -->
+        <div class="utility-navigation">
+            <div class="utility-navigation__wrap">
+                <div id="google_translate_element"></div>
+                <div class="search-form">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit"><i class="far fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <div class="site-header__wrapper">
+            <div class="site-branding">
+                <a href="/" class="custom-logo-link">
+                    <img src="assets/img/muditel%20logo.jpg" alt="Muditel Logo">
+                </a>
+            </div>
+
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-navigation">
+                <ul id="primary-menu">
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="cart-link"><a href="/cart"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <header class="entry-header">
+            <div class="entry-header__wrapper">
+                <h1>Welcome to Muditel</h1>
+                <p>Your tagline or brief description goes here</p>
+                <a href="#shop" class="button">Shop Now</a>
+            </div>
+        </header>
+
+        <!-- Product Categories -->
+        <section class="solution-cards">
+            <div class="solution-card">
+                <img src="assets/img/photo2.jpg" alt="Category 1" class="category-image">
+                <h3>Category 1</h3>
+                <p>Description of your first product category</p>
+                <a href="#" class="button">Learn More</a>
+            </div>
+            <div class="solution-card">
+                <img src="assets/img/photo3.jpg" alt="Category 2" class="category-image">
+                <h3>Category 2</h3>
+                <p>Description of your second product category</p>
+                <a href="#" class="button">Learn More</a>
+            </div>
+            <div class="solution-card">
+                <img src="assets/img/photo4.jpg" alt="Category 3" class="category-image">
+                <h3>Category 3</h3>
+                <p>Description of your third product category</p>
+                <a href="#" class="button">Learn More</a>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="product-cards">
+            <h2>Featured Products</h2>
+            <div class="product-cards__grid">
+                <div class="product-card">
+                    <img src="product1.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Product description</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="product2.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>Product description</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="product3.jpg" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>Product description</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="videos-section">
+            <h2>Product Videos</h2>
+            <div class="videos-grid">
+                <div class="video-card">
+                    <!-- Replace with your video embed code -->
+                    <iframe src="about:blank" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-card">
+                    <!-- Replace with your video embed code -->
+                    <iframe src="about:blank" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__wrapper">
+            <div class="footer-column">
+                <img src="assets/img/muditel%20logo.jpg" alt="Muditel Logo" class="footer-logo">
+                <ul class="social-links">
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Your Address</p>
+                <p>Phone: Your Phone</p>
+                <p>Email: your@email.com</p>
+            </div>
+            <div class="footer-column site-footer__column-signup">
+                <h3 class="site-footer__column-title">Sign up for our newsletter.</h3>
+                <p>Find out why we are an industry leader.</p>
+                <div class="site-footer__column-signup-form">
+                    <figure class="site-footer__column-signup-icon">
+                        <i class="far fa-envelope" aria-hidden="true"></i>
+                    </figure>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Add Back to Top Button -->
+            <div class="site-footer__column-backtotop">
+                <a href="#" title="Back to the top of the page" id="footer-backtotop">
+                    <i class="far fa-angle-up" aria-hidden="true"></i>
+                    <span class="site-footer__column-backtotop-label">Back to top</span>
+                </a>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <div class="site-footer__wrapper">
+                <p>&copy; 2024 Muditel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add Google Language Translator -->
+    <div id='glt-footer'></div>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.main-navigation').classList.toggle('active');
+            this.setAttribute('aria-expanded', 
+                this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'
+            );
+        });
+    </script>
+
+    <!-- Back to top functionality -->
+    <script>
+        document.getElementById('footer-backtotop').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
