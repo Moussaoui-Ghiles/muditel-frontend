@@ -1,0 +1,229 @@
+/* Components Page Styles */
+
+.solution-header {
+    background: linear-gradient(135deg, #0f1c2d 0%, #1e3d59 100%);
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.solution-selector {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.solution-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.solution-btn:hover,
+.solution-btn.active {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.solution-btn i {
+    font-size: 1.2rem;
+}
+
+/* Component Categories */
+.component-categories {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.category-btn {
+    background: var(--neutral-light);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--text-primary);
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background: var(--accent-color);
+    color: white;
+}
+
+/* Component Cards */
+.component-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.component-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.component-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.component-details {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.component-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.component-description {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.component-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.component-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quantity-btn {
+    background: var(--neutral-light);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quantity-btn:hover {
+    background: var(--accent-color);
+    color: white;
+}
+
+/* Selected Components Summary */
+.selected-components-summary {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.selected-items {
+    margin: 1.5rem 0;
+}
+
+.selected-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.selected-item:last-child {
+    border-bottom: none;
+}
+
+.item-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-info h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.item-price {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.summary-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.estimated-cost {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+#totalCost {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .solution-selector {
+        justify-content: flex-start;
+        margin-top: 1rem;
+    }
+
+    .component-categories {
+        justify-content: center;
+    }
+
+    .summary-footer {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
