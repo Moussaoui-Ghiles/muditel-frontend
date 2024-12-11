@@ -3,177 +3,906 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Energy Solutions - Muditel</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
-    
-    <!-- Bootstrap CSS -->
+    <title>Energy Solutions - MUDITEL</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
-    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/solution.css">
+    <link rel="stylesheet" href="../assets/css/energy-solutions.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .top-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Include your header/navigation here -->
-    
     <!-- Hero Section -->
-    <section class="solution-hero" style="background-image: url('../assets/img/solutions/energy-hero.jpg');">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h1 class="hero-title">Energy Solutions</h1>
-                    <p class="hero-subtitle">Powering the future with sustainable energy solutions</p>
+    <section class="hero-section">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-content">
+            <div class="container position-relative">
+                <!-- Top Navigation Buttons -->
+                <div class="top-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        Get a Quote
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                    <a href="#solutions" class="btn btn-outline-light">
+                        Explore Solutions
+                        <i class="fas fa-chevron-down ms-2"></i>
+                    </a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Overview Section -->
-    <section class="solution-overview py-5" id="power-systems">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h2 class="section-title">Power Systems Excellence</h2>
-                    <p class="section-description">Our comprehensive energy solutions deliver reliable power systems and innovative energy management technologies for modern infrastructure needs.</p>
-                    <ul class="feature-list">
-                        <li><i class="fas fa-check-circle"></i> Advanced Power Distribution Systems</li>
-                        <li><i class="fas fa-check-circle"></i> Renewable Energy Integration</li>
-                        <li><i class="fas fa-check-circle"></i> Smart Grid Technologies</li>
-                        <li><i class="fas fa-check-circle"></i> Energy Storage Solutions</li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <div class="overview-image">
-                        <img src="../assets/img/solutions/energy-overview.jpg" alt="Energy Solutions Overview">
+                
+                <div class="row align-items-center">
+                    <div class="col-lg-7" data-aos="fade-right">
+                        <span class="badge">MUDITEL Energy Solutions</span>
+                        <h1>
+                            Comprehensive Energy Solutions for Tomorrow's Needs
+                        </h1>
+                        <p class="lead">
+                            MUDITEL TELECOM presents a comprehensive suite of energy solutions that address diverse and evolving energy needs. 
+                            Through strategic integration of generators, solar panels, and grid connections, we deliver flexible, reliable, 
+                            and sustainable solutions.
+                        </p>
+                        <div class="features-grid">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="feature-item">
+                                        <i class="fas fa-check-circle me-3"></i>
+                                        <span>Flexible & reliable power systems</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="feature-item">
+                                        <i class="fas fa-check-circle me-3"></i>
+                                        <span>Optimized energy efficiency</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="feature-item">
+                                        <i class="fas fa-check-circle me-3"></i>
+                                        <span>Reduced operational costs</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="feature-item">
+                                        <i class="fas fa-check-circle me-3"></i>
+                                        <span>Minimized environmental impact</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5" data-aos="fade-left">
+                        <div class="hero-image-wrapper">
+                            <img src="../assets/img/energy-hero.jpg" alt="Integrated Energy Solutions" 
+                                 class="img-fluid rounded-4 shadow-lg">
+                        </div>
+                        <div class="hero-stats-container">
+                            <div class="hero-stats">
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                                    <span class="stat-number">95%</span>
+                                    <span class="stat-label">ENERGY<br>EFFICIENCY</span>
+                                </div>
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                                    <span class="stat-number">24/7</span>
+                                    <span class="stat-label">SYSTEM<br>UPTIME</span>
+                                </div>
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                                    <span class="stat-number">40%</span>
+                                    <span class="stat-label">COST<br>REDUCTION</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="solution-services py-5 bg-light" id="energy-management">
+    <!-- Credibility Bar -->
+    <section class="partners-section">
         <div class="container">
-            <h2 class="section-title text-center mb-5">Our Energy Services</h2>
+            <div class="partners-content">
+                <div class="partners-title" data-aos="fade-up">
+                    <span class="partners-badge">Our Partners</span>
+                    <h3>Trusted by Product Providers</h3>
+                </div>
+                <div class="partners-grid" data-aos="fade-up" data-aos-delay="100">
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <img src="../assets/img/partners/sunpower.png" alt="SunPower">
+                        </div>
+                        <span class="partner-name">SunPower</span>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <img src="../assets/img/partners/tesla.png" alt="Tesla">
+                        </div>
+                        <span class="partner-name">Tesla</span>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <img src="../assets/img/partners/lg.png" alt="LG">
+                        </div>
+                        <span class="partner-name">LG</span>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <img src="../assets/img/partners/enphase.png" alt="Enphase">
+                        </div>
+                        <span class="partner-name">Enphase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Overview -->
+    <section id="solutions" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge bg-primary-subtle text-primary mb-3">Our Solutions</span>
+                <h2 class="display-5 fw-bold text-white mb-4">Comprehensive Energy Solutions</h2>
+                <p class="lead text-light mx-auto" style="max-width: 700px;">
+                    Discover our range of innovative energy solutions designed to optimize efficiency, 
+                    reduce costs, and ensure reliable power supply for your operations.
+                </p>
+            </div>
+
             <div class="row g-4">
-                <!-- Service Card 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-solar-panel"></i>
+                <!-- Off-Grid Solution Card -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="solution-card d-flex flex-column">
+                        <div class="solution-content">
+                            <div class="solution-icon">
+                                <i class="fas fa-solar-panel"></i>
+                            </div>
+                            <h3 class="h4 mb-3 text-white">Off-Grid Solar</h3>
+                            <p class="text-light mb-4">
+                                Complete energy independence without relying on the grid. 
+                                Perfect for remote locations and critical infrastructure.
+                            </p>
+                            <ul class="feature-list list-unstyled mb-4">
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-check text-primary me-2"></i>
+                                    <span class="text-light">Battery storage included</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-check text-primary me-2"></i>
+                                    <span class="text-light">Generator backup options</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="fas fa-check text-primary me-2"></i>
+                                    <span class="text-light">Minimal ongoing costs</span>
+                                </li>
+                            </ul>
                         </div>
-                        <h3>Renewable Energy</h3>
-                        <p>Solar, wind, and hybrid energy solutions for sustainable power generation.</p>
+                        <div class="mt-auto">
+                            <a href="#solution-details" onclick="document.getElementById('off-grid-tab').click()" class="btn btn-outline-primary w-100">Learn More</a>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Service Card 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-battery-full"></i>
+
+                <!-- On-Grid Solution Card -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="solution-card d-flex flex-column">
+                        <div class="solution-content">
+                            <div class="solution-icon">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <h3 class="h4 mb-3 text-white">On-Grid Solar</h3>
+                            <p class="text-light mb-4">
+                                Connect seamlessly with the existing power grid to optimize energy consumption 
+                                and reduce operational costs.
+                            </p>
+                            <ul class="feature-list list-unstyled mb-4">
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-check text-primary me-2"></i>
+                                    <span class="text-light">Grid synchronization</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-check text-primary me-2"></i>
+                                    <span class="text-light">Net metering benefits</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="fas fa-check text-primary me-2"></i>
+                                    <span class="text-light">Low maintenance</span>
+                                </li>
+                            </ul>
                         </div>
-                        <h3>Energy Storage</h3>
-                        <p>Advanced battery and energy storage systems for reliable power backup.</p>
+                        <div class="mt-auto">
+                            <a href="#solution-details" onclick="document.getElementById('on-grid-tab').click()" class="btn btn-outline-primary w-100">Learn More</a>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Service Card 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-chart-line"></i>
+
+                <!-- Hybrid Solution Card -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="solution-card d-flex flex-column">
+                        <div class="solution-content">
+                            <div class="solution-icon">
+                                <i class="fas fa-battery-full"></i>
+                            </div>
+                            <h3 class="h4 mb-3 text-white">Hybrid Solar</h3>
+                            <p class="text-light mb-4">
+                                The perfect balance of renewable energy, storage technology, and traditional 
+                                power sources for maximum reliability.
+                            </p>
+                            <ul class="feature-list list-unstyled mb-4">
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-check text-primary me-2"></i>
+                                    <span class="text-light">Battery storage system</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-check text-primary me-2"></i>
+                                    <span class="text-light">Smart power management</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="fas fa-check text-primary me-2"></i>
+                                    <span class="text-light">Continuous operation</span>
+                                </li>
+                            </ul>
                         </div>
-                        <h3>Smart Monitoring</h3>
-                        <p>Real-time energy monitoring and management systems for optimal efficiency.</p>
+                        <div class="mt-auto">
+                            <a href="#solution-details" onclick="document.getElementById('hybrid-tab').click()" class="btn btn-outline-primary w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Details Section -->
+    <section class="solution-details py-5" id="solution-details">
+        <div class="container">
+            <div class="solutions-header text-center mb-5">
+                <div class="section-badge mb-3" data-aos="fade-up">
+                    DETAILED SOLUTIONS
+                </div>
+                <h2 class="display-4 text-white mb-4" data-aos="fade-up" data-aos-delay="100">
+                    Comprehensive Energy Solutions
+                </h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p class="lead text-light mb-0" data-aos="fade-up" data-aos-delay="200">
+                            Explore our range of customized energy solutions designed to meet your specific
+                            needs and requirements. Each solution is backed by cutting-edge technology and
+                            expert implementation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="solution-tabs">
+                <ul class="nav nav-pills custom-tabs mb-5 justify-content-center" id="solutionTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="off-grid-tab" data-bs-toggle="pill" data-bs-target="#off-grid">
+                            <i class="fas fa-solar-panel me-2"></i>Off-Grid Solution
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="on-grid-tab" data-bs-toggle="pill" data-bs-target="#on-grid">
+                            <i class="fas fa-plug me-2"></i>On-Grid Solution
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="hybrid-tab" data-bs-toggle="pill" data-bs-target="#hybrid">
+                            <i class="fas fa-sync me-2"></i>Hybrid Solution
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content solution-content" id="solutionTabContent">
+                    <!-- Off-Grid Tab -->
+                    <div class="tab-pane fade show active" id="off-grid" role="tabpanel">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 mb-4 mb-lg-0">
+                                <div class="solution-image" data-aos="fade-right">
+                                    <img src="../assets/img/offgridsolar.png" alt="Off-Grid Solar Solution" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="solution-info" data-aos="fade-left">
+                                    <span class="section-badge">Off-Grid Solar</span>
+                                    <h2 class="h3 text-white mb-4">Complete Energy Independence</h2>
+                                    <p class="text-light mb-4">
+                                        An off-grid solar panel solution is a self-sufficient energy system
+                                        designed to operate independently from the main electricity grid.
+                                        It typically includes solar panels, batteries for energy storage, an
+                                        inverter, and, often, a backup generator.
+                                    </p>
+                                    <p class="text-light mb-4">
+                                        Combining a reliable generator with solar panels, this solution
+                                        ensures continuous power, especially in locations with no grid access.
+                                    </p>
+
+                                    <div class="feature-item mb-4">
+                                        <div class="feature-header">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-bolt"></i>
+                                            </div>
+                                            <h4>Key Benefits</h4>
+                                        </div>
+                                        <ul class="list-unstyled mb-0 mt-3">
+                                            <li class="text-light mb-2 d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                Energy Independence: No reliance on the power grid
+                                            </li>
+                                            <li class="text-light mb-2 d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                Battery Storage: Store excess solar energy
+                                            </li>
+                                            <li class="text-light mb-2 d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                Lower Operating Costs: Reduced utility bills
+                                            </li>
+                                            <li class="text-light d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                Sustainable Power Supply: Zero emissions
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="feature-item mb-4">
+                                        <div class="feature-header">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-tools"></i>
+                                            </div>
+                                            <h4>Components</h4>
+                                        </div>
+                                        <ul class="list-unstyled mb-0 mt-3">
+                                            <li class="text-light mb-2 d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                High-efficiency solar panels
+                                            </li>
+                                            <li class="text-light mb-2 d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                Lithium-ion or lead-acid battery storage
+                                            </li>
+                                            <li class="text-light mb-2 d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                Power inverter
+                                            </li>
+                                            <li class="text-light d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                Recommended diesel generator backup
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="feature-item mb-4">
+                                        <div class="feature-header">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                                            <h4>Application Scenarios</h4>
+                                        </div>
+                                        <ul class="list-unstyled mb-0 mt-3">
+                                            <li class="text-light mb-2 d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                Wildlife Research Station in Remote Wilderness
+                                            </li>
+                                            <li class="text-light mb-2 d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                Border Patrol or Remote Security Outpost
+                                            </li>
+                                            <li class="text-light mb-2 d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                Telecommunications Tower in a remote location
+                                            </li>
+                                            <li class="text-light d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                Remote Off-Grid Community or Village
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="solution-actions mt-4">
+                                        <a href="components.html?solution=off-grid" class="btn btn-primary me-3">Get Custom Quote</a>
+                                        <a href="#contact" class="btn btn-outline-secondary">Get Expert Help</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- On-Grid Tab -->
+                    <div class="tab-pane fade" id="on-grid" role="tabpanel">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 mb-4 mb-lg-0">
+                                <div class="solution-image" data-aos="fade-right">
+                                    <img src="../assets/img/ongridsolar.png" alt="On-Grid Solar Solution" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="solution-info" data-aos="fade-left">
+                                    <span class="section-badge">On-Grid Solar</span>
+                                    <h2 class="h3 text-white mb-4">Grid-Connected Solar Power</h2>
+                                    <p class="text-light mb-4">
+                                        The On-Grid Solar Solution connects directly to the utility grid, enabling the
+                                        facility to draw power from both solar and grid sources. Solar energy will serve
+                                        as the primary power source, while the grid will supply additional power when
+                                        solar production does not meet demand.
+                                    </p>
+                                    <p class="text-light mb-4">
+                                        Additionally, surplus solar energy can be fed back into the grid for credits through 
+                                        a net metering arrangement, potentially generating cost savings.
+                                    </p>
+
+                                    <div class="feature-item mb-4">
+                                        <div class="feature-header">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-bolt"></i>
+                                            </div>
+                                            <h4>Key Benefits</h4>
+                                        </div>
+                                        <ul class="list-unstyled mb-0 mt-3">
+                                            <li class="text-light mb-2 d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                <span>Energy Savings: Reduces electricity bills by supplying solar energy directly to the facility</span>
+                                            </li>
+                                            <li class="text-light mb-2 d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                <span>Return on Investment (ROI): With net metering, surplus energy fed into the grid earns credits</span>
+                                            </li>
+                                            <li class="text-light mb-2 d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                <span>Low Maintenance: Simplified maintenance as battery storage isn't required</span>
+                                            </li>
+                                            <li class="text-light d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                <span>Ideal for Urban Areas: Works well where grid infrastructure is reliable</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="feature-item mb-4">
+                                        <div class="feature-header">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-tools"></i>
+                                            </div>
+                                            <h4>Components</h4>
+                                        </div>
+                                        <ul class="list-unstyled mb-0 mt-3">
+                                            <li class="text-light mb-2 d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                <span>Solar Panels: Capture sunlight and convert it into usable electricity</span>
+                                            </li>
+                                            <li class="text-light mb-2 d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                <span>Inverter: Converts direct current (DC) from solar panels into alternating current (AC)</span>
+                                            </li>
+                                            <li class="text-light d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                <span>Grid Connection: Allows excess energy to be sent to the grid while ensuring power availability</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="feature-item mb-4">
+                                        <div class="feature-header">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                                            <h4>Application Scenarios</h4>
+                                        </div>
+                                        <ul class="list-unstyled mb-0 mt-3">
+                                            <li class="text-light mb-2 d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                <span>A manufacturing company in a city with stable grid access operates heavy machinery during the day</span>
+                                            </li>
+                                            <li class="text-light mb-2 d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                <span>Commercial buildings looking to reduce energy costs</span>
+                                            </li>
+                                            <li class="text-light d-flex align-items-center">
+                                                <i class="fas fa-check text-primary me-2"></i>
+                                                <span>A large office building in a stable grid area has substantial daytime energy needs for lighting, HVAC, and office equipment</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="solution-actions mt-4">
+                                        <a href="components.html?solution=on-grid" class="btn btn-primary me-3">Get Custom Quote</a>
+                                        <a href="#contact" class="btn btn-outline-secondary">Get Expert Help</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hybrid Tab-->
+                    <div class="tab-pane fade" id="hybrid" role="tabpanel">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 mb-4 mb-lg-0">
+                                <div class="solution-image" data-aos="fade-right">
+                                    <img src="../assets/img/hybridsolar.png" alt="Hybrid Solar Solution" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="solution-info" data-aos="fade-left">
+                                    <span class="section-badge">Hybrid Solar</span>
+                                    <h2 class="h3 text-white mb-4">Integrated Hybrid Power Solutions</h2>
+                                    <p class="text-white mb-4">
+                                        Our Integrated Hybrid Power Solutions combine solar power with battery storage and an auxiliary source—such as a generator or the utility grid—to create a reliable, flexible, and cost-effective energy system. Ideal for areas with unstable grid supply or facilities requiring consistent power availability, these solutions ensure continuous operation, reduce fuel costs, and seamlessly balance multiple energy sources to meet your site's unique demands.
+                                    </p>
+
+                                    <div class="feature-item mb-4">
+                                        <div class="feature-header">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <h4 class="text-white">Key Benefits</h4>
+                                        </div>
+                                        <ul class="feature-list text-white">
+                                            <li>
+                                                <strong class="text-white">Reliable Power Supply:</strong> Continuous energy delivery even during grid outages, overcast days, or periods of high demand.
+                                            </li>
+                                            <li>
+                                                <strong class="text-white">Optimized Fuel Usage:</strong> Lower generator fuel consumption by relying primarily on solar power and stored energy.
+                                            </li>
+                                            <li>
+                                                <strong class="text-white">Flexible Power Management:</strong> Dynamically balance solar, battery, and generator/grid inputs for the most efficient and economical operation.
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="feature-item mb-4">
+                                        <div class="feature-header">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-tools"></i>
+                                            </div>
+                                            <h4 class="text-white">Core Components</h4>
+                                        </div>
+                                        <ul class="feature-list text-white">
+                                            <li>
+                                                <strong class="text-white">Solar Panels:</strong> Capture and convert sunlight into electricity, serving as the primary energy source.
+                                            </li>
+                                            <li>
+                                                <strong class="text-white">Battery Storage:</strong> Store excess solar energy generated during peak production hours for use when solar input is low.
+                                            </li>
+                                            <li>
+                                                <strong class="text-white">Inverter:</strong> Convert DC electricity from the panels and batteries into AC power that integrates seamlessly with your facility's electrical systems.
+                                            </li>
+                                            <li>
+                                                <strong class="text-white">Backup Generator/Grid Connection:</strong> Provide an additional layer of reliability, supplying power when solar and battery reserves are insufficient.
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="feature-item mb-4">
+                                        <div class="feature-header">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-building"></i>
+                                            </div>
+                                            <h4 class="text-white">Application Scenarios</h4>
+                                        </div>
+                                        <ul class="feature-list text-white">
+                                            <li>
+                                                <strong class="text-white">Rural Hospitals and Educational Campuses:</strong> Maintain critical operations in regions with frequent load-shedding or unreliable grid conditions.
+                                            </li>
+                                            <li>
+                                                <strong class="text-white">Agricultural Farms:</strong> Support seasonal high power demand with efficient hybrid management.
+                                            </li>
+                                            <li>
+                                                <strong class="text-white">Smart Homes and Small Businesses:</strong> Ensure high-quality, economical power supply that reduces utility costs and environmental impact.
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="feature-item mb-4">
+                                        <div class="feature-header">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-expand-arrows-alt"></i>
+                                            </div>
+                                            <h4 class="text-white">Scalability and Customization</h4>
+                                        </div>
+                                        <p class="text-white">
+                                            All Integrated Hybrid Power Solutions are tailored to meet specific load requirements. Whether you need a modest 2kW setup or a larger, more sophisticated configuration, we'll help you choose the right solar panels, battery types, and generator capacities. The integrated power cabinet—featuring batteries, rectifiers, and an ATS (Automatic Transfer Switch)—ensures smooth transitions and consistent power quality.
+                                        </p>
+                                    </div>
+
+                                    <div class="feature-item mb-4">
+                                        <div class="feature-header">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-wrench"></i>
+                                            </div>
+                                            <h4 class="text-white">Maintenance and Upgrades</h4>
+                                        </div>
+                                        <p class="text-white">
+                                            If you need to replace components or enhance your existing system, we offer a full line of compatible products. From advanced battery chemistries to higher-efficiency solar panels and more robust generators, we support both new installations and maintenance projects to keep your energy infrastructure running optimally.
+                                        </p>
+                                    </div>
+
+                                    <div class="solution-actions mt-4">
+                                        <a href="components.html?solution=hybrid" class="btn btn-primary me-3">Get Custom Quote</a>
+                                        <a href="#contact" class="btn btn-outline-secondary">Get Expert Help</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section class="solution-products py-5">
+    <!-- Comparison Table -->
+    <section class="comparison-section py-5">
         <div class="container">
-            <h2 class="section-title text-center mb-5">Featured Products</h2>
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <span class="badge bg-primary-subtle text-primary mb-3">Solution Comparison</span>
+                    <h2 class="display-5 fw-bold text-white mb-4">Find Your Perfect Fit</h2>
+                    <p class="lead text-white mx-auto" style="max-width: 700px;">
+                        Compare our solutions to find the best match for your energy needs
+                    </p>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table comparison-table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-white">Features</th>
+                            <th scope="col" class="text-white">Off Grid Solution</th>
+                            <th scope="col" class="text-white">On Grid Solution</th>
+                            <th scope="col" class="text-white">Hybrid Solution</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-white">
+                        <tr>
+                            <td><strong>Grid Connection</strong></td>
+                            <td>Not required</td>
+                            <td>Required</td>
+                            <td>Not strictly required</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Battery Storage</strong></td>
+                            <td>Required for energy storage</td>
+                            <td>Not required</td>
+                            <td>Required for backup during outages and to store excess</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Backup Power</strong></td>
+                            <td>Generator backup recommended</td>
+                            <td>Grid backup available / Generator optional</td>
+                            <td>Dual grid and battery storage backup available / Generator optional</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ideal Use Cases</strong></td>
+                            <td>Remote locations, critical infrastructure</td>
+                            <td>Urban/commercial buildings with stable grid</td>
+                            <td>Areas with unstable grid</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cost Savings</strong></td>
+                            <td>High due to grid independence</td>
+                            <td>Moderate, with potential for grid credits</td>
+                            <td>Moderate, with high saving electrical costs</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="#contact" class="btn btn-primary btn-lg">
+                    Speak with an Expert to Find Your Perfect Fit
+                    <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Process -->
+    <section class="implementation-section dark-theme py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <span class="badge bg-accent text-white mb-3">Our Process</span>
+                    <h2 class="display-5 fw-bold text-white mb-4">Our Proven 5-Step Implementation Process</h2>
+                    <p class="lead text-light">
+                        A systematic approach ensuring successful deployment of your energy solution
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-wrapper">
+                <!-- Step 1 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content dark-card">
+                        <h3 class="text-white">Consultation & Feasibility</h3>
+                        <p class="text-light">Understanding your needs and constraints through detailed analysis</p>
+                        <ul class="timeline-features">
+                            <li><i class="fas fa-check-circle"></i> Site Assessment</li>
+                            <li><i class="fas fa-check-circle"></i> Energy Audit</li>
+                            <li><i class="fas fa-check-circle"></i> Requirements Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content dark-card">
+                        <h3 class="text-white">Customized System Design</h3>
+                        <p class="text-light">Tailoring the perfect solution to match your site specifications and goals</p>
+                        <ul class="timeline-features">
+                            <li><i class="fas fa-check-circle"></i> System Architecture Design</li>
+                            <li><i class="fas fa-check-circle"></i> Component Selection</li>
+                            <li><i class="fas fa-check-circle"></i> ROI Calculations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content dark-card">
+                        <h3 class="text-white">Equipment Supply & Installation</h3>
+                        <p class="text-light">Professional installation of high-quality components by certified experts</p>
+                        <ul class="timeline-features">
+                            <li><i class="fas fa-check-circle"></i> Premium Component Sourcing</li>
+                            <li><i class="fas fa-check-circle"></i> Professional Installation</li>
+                            <li><i class="fas fa-check-circle"></i> Quality Control</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content dark-card">
+                        <h3 class="text-white">Training & Handover</h3>
+                        <p class="text-light">Comprehensive training and system documentation for your team</p>
+                        <ul class="timeline-features">
+                            <li><i class="fas fa-check-circle"></i> Operational Training</li>
+                            <li><i class="fas fa-check-circle"></i> Maintenance Guidelines</li>
+                            <li><i class="fas fa-check-circle"></i> Documentation Handover</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-number">5</div>
+                    <div class="timeline-content dark-card">
+                        <h3 class="text-white">Ongoing Support & Service</h3>
+                        <p class="text-light">Continuous technical assistance and maintenance support</p>
+                        <ul class="timeline-features">
+                            <li><i class="fas fa-check-circle"></i> 24/7 Technical Support</li>
+                            <li><i class="fas fa-check-circle"></i> Regular Maintenance</li>
+                            <li><i class="fas fa-check-circle"></i> Performance Monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Add CTA button at the end of timeline -->
+                <div class="text-center mt-5">
+                    <a href="#contact" class="btn btn-accent btn-lg">
+                        Get Started Today
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <span class="badge bg-primary-subtle text-primary mb-3">Success Stories</span>
+                    <h2 class="display-5 fw-bold mb-4">Real Results from Real Clients</h2>
+                    <p class="lead text-muted">
+                        Discover how businesses and communities transformed their operations with our solar solutions
+                    </p>
+                </div>
+            </div>
+
             <div class="row g-4">
-                <!-- Product Card 1 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="../assets/img/solutions/energy-product-1.jpg" alt="Solar Panels">
+                <!-- Commercial Building Case -->
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="success-card">
+                        <div class="success-icon">
+                            <i class="fas fa-building"></i>
                         </div>
-                        <div class="product-info">
-                            <h3>Solar Panels</h3>
-                            <p>High-efficiency solar panels for sustainable energy generation.</p>
+                        <h3 class="h4">Commercial Building Success</h3>
+                        <div class="success-metrics">
+                            <div class="metric">
+                                <span class="metric-value">40%</span>
+                                <span class="metric-label">Power Cost Reduction</span>
+                            </div>
                         </div>
+                        <p class="success-description">
+                            Major office complex achieved significant cost savings through our on-grid solar solution
+                        </p>
+                        <ul class="success-points">
+                            <li>Annual savings of AED 250,000</li>
+                            <li>ROI achieved in 3 years</li>
+                            <li>Carbon footprint reduced by 60%</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <!-- Product Card 2 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="../assets/img/solutions/energy-product-2.jpg" alt="Battery Systems">
+
+                <!-- Telecom Tower Case -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="success-card">
+                        <div class="success-icon">
+                            <i class="fas fa-broadcast-tower"></i>
                         </div>
-                        <div class="product-info">
-                            <h3>Battery Systems</h3>
-                            <p>Advanced energy storage solutions for continuous power supply.</p>
+                        <h3 class="h4">Telecom Tower Excellence</h3>
+                        <div class="success-metrics">
+                            <div class="metric">
+                                <span class="metric-value">99.9%</span>
+                                <span class="metric-label">Uptime Achievement</span>
+                            </div>
                         </div>
+                        <p class="success-description">
+                            Remote telecom tower maintains exceptional uptime with our hybrid solution
+                        </p>
+                        <ul class="success-points">
+                            <li>Zero downtime in 12 months</li>
+                            <li>70% reduction in generator usage</li>
+                            <li>24/7 remote monitoring</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <!-- Product Card 3 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="../assets/img/solutions/energy-product-3.jpg" alt="Smart Meters">
+
+                <!-- Rural Hospital Case -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="success-card">
+                        <div class="success-icon">
+                            <i class="fas fa-hospital"></i>
                         </div>
-                        <div class="product-info">
-                            <h3>Smart Meters</h3>
-                            <p>Intelligent energy monitoring and management devices.</p>
+                        <h3 class="h4">Healthcare Reliability</h3>
+                        <div class="success-metrics">
+                            <div class="metric">
+                                <span class="metric-value">100%</span>
+                                <span class="metric-label">Critical Power Availability</span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Product Card 4 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="../assets/img/solutions/energy-product-4.jpg" alt="Power Controllers">
-                        </div>
-                        <div class="product-info">
-                            <h3>Power Controllers</h3>
-                            <p>Advanced power distribution and control systems.</p>
-                        </div>
+                        <p class="success-description">
+                            Rural hospital ensures uninterrupted care with our off-grid solution
+                        </p>
+                        <ul class="success-points">
+                            <li>Continuous power for critical care</li>
+                            <li>80% energy cost reduction</li>
+                            <li>Zero medical service interruptions</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="solution-cta py-5">
-        <div class="container">
-            <div class="cta-content text-center">
-                <h2>Transform Your Energy Infrastructure</h2>
-                <p>Contact us today to discuss your energy management needs and sustainable power solutions.</p>
-                <a href="../contact.html" class="btn btn-primary btn-lg">Get Started</a>
-            </div>
-        </div>
+    <!-- Trust & Credibility -->
+    <section class="trust-section bg-light py-5">
+        <!-- Add trust content -->
     </section>
 
-    <!-- Include your footer here -->
+    <!-- Final CTA -->
+    <section class="cta-section py-5 bg-primary text-white">
+        <!-- Add final CTA content -->
+    </section>
 
-    <!-- Bootstrap JS -->
+    <!-- Footer will be loaded via JavaScript -->
+    <div id="footer-placeholder"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
 </body>
 </html>
