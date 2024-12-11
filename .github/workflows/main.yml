@@ -17,3 +17,6 @@ jobs:
         server: ftp.muditel.com
         username: ghiles@muditel.com
         password: ghiles@mud24
+        exclude: |
+          **/.git*
+          **/.git*/**
