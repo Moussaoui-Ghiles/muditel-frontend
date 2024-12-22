@@ -12,9 +12,32 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         .top-buttons {
-            position: absolute;
-            top: 20px;
-            right: 20px;
+            position: relative;
+            margin: 1rem 0 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @media (min-width: 768px) {
+            .top-buttons {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                margin: 0;
+            }
+        }
+
+        .solution-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 1rem;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
         }
     </style>
 </head>
@@ -22,130 +45,39 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-bg-pattern"></div>
+        <div class="hero-bg-image"></div>
         <div class="hero-content">
             <div class="container position-relative">
-                <!-- Top Navigation Buttons -->
-                <div class="top-buttons">
+                <div class="quote-button">
                     <a href="#contact" class="btn btn-primary">
                         Get a Quote
                         <i class="fas fa-arrow-right ms-2"></i>
                     </a>
-                    <a href="#solutions" class="btn btn-outline-light">
-                        Explore Solutions
-                        <i class="fas fa-chevron-down ms-2"></i>
-                    </a>
                 </div>
                 
-                <div class="row align-items-center">
-                    <div class="col-lg-7" data-aos="fade-right">
-                        <span class="badge">MUDITEL Energy Solutions</span>
-                        <h1>
-                            Comprehensive Energy Solutions for Tomorrow's Needs
-                        </h1>
-                        <p class="lead">
-                            MUDITEL TELECOM presents a comprehensive suite of energy solutions that address diverse and evolving energy needs. 
-                            Through strategic integration of generators, solar panels, and grid connections, we deliver flexible, reliable, 
-                            and sustainable solutions.
-                        </p>
-                        <div class="features-grid">
-                            <div class="row g-4">
-                                <div class="col-md-6">
-                                    <div class="feature-item">
-                                        <i class="fas fa-check-circle me-3"></i>
-                                        <span>Flexible & reliable power systems</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="feature-item">
-                                        <i class="fas fa-check-circle me-3"></i>
-                                        <span>Optimized energy efficiency</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="feature-item">
-                                        <i class="fas fa-check-circle me-3"></i>
-                                        <span>Reduced operational costs</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="feature-item">
-                                        <i class="fas fa-check-circle me-3"></i>
-                                        <span>Minimized environmental impact</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5" data-aos="fade-left">
-                        <div class="hero-image-wrapper">
-                            <img src="../assets/img/energy-hero.jpg" alt="Integrated Energy Solutions" 
-                                 class="img-fluid rounded-4 shadow-lg">
-                        </div>
-                        <div class="hero-stats-container">
-                            <div class="hero-stats">
-                                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
-                                    <span class="stat-number">95%</span>
-                                    <span class="stat-label">ENERGY<br>EFFICIENCY</span>
-                                </div>
-                                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
-                                    <span class="stat-number">24/7</span>
-                                    <span class="stat-label">SYSTEM<br>UPTIME</span>
-                                </div>
-                                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
-                                    <span class="stat-number">40%</span>
-                                    <span class="stat-label">COST<br>REDUCTION</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="hero-text-center">
+                    <h1 class="hero-title" data-aos="fade-up">MUDITEL energy solutions</h1>
+                    <ul class="solutions-list" data-aos="fade-up" data-aos-delay="100">
+                        <li><i class="fas fa-solar-panel"></i> Off-Grid Solar Solutions</li>
+                        <li><i class="fas fa-plug"></i> On-Grid Power Systems</li>
+                        <li><i class="fas fa-battery-half"></i> Hybrid Power Solutions</li>
+                    </ul>
+                    <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#solutions" class="scroll-link">
+                            Explore Solutions
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Credibility Bar -->
-    <section class="partners-section">
-        <div class="container">
-            <div class="partners-content">
-                <div class="partners-title" data-aos="fade-up">
-                    <span class="partners-badge">Our Partners</span>
-                    <h3>Trusted by Product Providers</h3>
-                </div>
-                <div class="partners-grid" data-aos="fade-up" data-aos-delay="100">
-                    <div class="partner-card">
-                        <div class="partner-logo">
-                            <img src="../assets/img/partners/sunpower.png" alt="SunPower">
-                        </div>
-                        <span class="partner-name">SunPower</span>
-                    </div>
-                    <div class="partner-card">
-                        <div class="partner-logo">
-                            <img src="../assets/img/partners/tesla.png" alt="Tesla">
-                        </div>
-                        <span class="partner-name">Tesla</span>
-                    </div>
-                    <div class="partner-card">
-                        <div class="partner-logo">
-                            <img src="../assets/img/partners/lg.png" alt="LG">
-                        </div>
-                        <span class="partner-name">LG</span>
-                    </div>
-                    <div class="partner-card">
-                        <div class="partner-logo">
-                            <img src="../assets/img/partners/enphase.png" alt="Enphase">
-                        </div>
-                        <span class="partner-name">Enphase</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Solutions Overview -->
     <section id="solutions" class="py-5">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
-                <span class="badge bg-primary-subtle text-primary mb-3">Our Solutions</span>
                 <h2 class="display-5 fw-bold text-white mb-4">Comprehensive Energy Solutions</h2>
                 <p class="lead text-light mx-auto" style="max-width: 700px;">
                     Discover our range of innovative energy solutions designed to optimize efficiency, 
@@ -185,7 +117,7 @@
                             <a href="#solution-details" onclick="document.getElementById('off-grid-tab').click()" class="btn btn-outline-primary w-100">Learn More</a>
                         </div>
                     </div>
-                </div>
+                </div>                                  
 
                 <!-- On-Grid Solution Card -->
                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
@@ -261,9 +193,6 @@
     <section class="solution-details py-5" id="solution-details">
         <div class="container">
             <div class="solutions-header text-center mb-5">
-                <div class="section-badge mb-3" data-aos="fade-up">
-                    DETAILED SOLUTIONS
-                </div>
                 <h2 class="display-4 text-white mb-4" data-aos="fade-up" data-aos-delay="100">
                     Comprehensive Energy Solutions
                 </h2>
@@ -308,7 +237,6 @@
                             </div>
                             <div class="col-lg-7">
                                 <div class="solution-info" data-aos="fade-left">
-                                    <span class="section-badge">Off-Grid Solar</span>
                                     <h2 class="h3 text-white mb-4">Complete Energy Independence</h2>
                                     <p class="text-light mb-4">
                                         An off-grid solar panel solution is a self-sufficient energy system
@@ -421,7 +349,6 @@
                             </div>
                             <div class="col-lg-7">
                                 <div class="solution-info" data-aos="fade-left">
-                                    <span class="section-badge">On-Grid Solar</span>
                                     <h2 class="h3 text-white mb-4">Grid-Connected Solar Power</h2>
                                     <p class="text-light mb-4">
                                         The On-Grid Solar Solution connects directly to the utility grid, enabling the
@@ -525,10 +452,9 @@
                             </div>
                             <div class="col-lg-7">
                                 <div class="solution-info" data-aos="fade-left">
-                                    <span class="section-badge">Hybrid Solar</span>
-                                    <h2 class="h3 text-white mb-4">Integrated Hybrid Power Solutions</h2>
+                                    <h2 class="h3 text-white mb-4">Hybrid Power Solutions</h2>
                                     <p class="text-white mb-4">
-                                        Our Integrated Hybrid Power Solutions combine solar power with battery storage and an auxiliary source—such as a generator or the utility grid—to create a reliable, flexible, and cost-effective energy system. Ideal for areas with unstable grid supply or facilities requiring consistent power availability, these solutions ensure continuous operation, reduce fuel costs, and seamlessly balance multiple energy sources to meet your site's unique demands.
+                                        Our Hybrid Power Solutions combine solar power with battery storage and an auxiliary source—such as a generator or the utility grid—to create a reliable, flexible, and cost-effective energy system. Ideal for areas with unstable grid supply or facilities requiring consistent power availability, these solutions ensure continuous operation, reduce fuel costs, and seamlessly balance multiple energy sources to meet your site's unique demands.
                                     </p>
 
                                     <div class="feature-item mb-4">
@@ -602,7 +528,7 @@
                                             <h4 class="text-white">Scalability and Customization</h4>
                                         </div>
                                         <p class="text-white">
-                                            All Integrated Hybrid Power Solutions are tailored to meet specific load requirements. Whether you need a modest 2kW setup or a larger, more sophisticated configuration, we'll help you choose the right solar panels, battery types, and generator capacities. The integrated power cabinet—featuring batteries, rectifiers, and an ATS (Automatic Transfer Switch)—ensures smooth transitions and consistent power quality.
+                                            All Hybrid Power Solutions are tailored to meet specific load requirements. Whether you need a modest 2kW setup or a larger, more sophisticated configuration, we'll help you choose the right solar panels, battery types, and generator capacities. The power cabinet—featuring batteries, rectifiers, and an ATS (Automatic Transfer Switch)—ensures smooth transitions and consistent power quality.
                                         </p>
                                     </div>
 
@@ -636,7 +562,6 @@
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 text-center">
-                    <span class="badge bg-primary-subtle text-primary mb-3">Solution Comparison</span>
                     <h2 class="display-5 fw-bold text-white mb-4">Find Your Perfect Fit</h2>
                     <p class="lead text-white mx-auto" style="max-width: 700px;">
                         Compare our solutions to find the best match for your energy needs
@@ -703,7 +628,6 @@
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 text-center">
-                    <span class="badge bg-accent text-white mb-3">Our Process</span>
                     <h2 class="display-5 fw-bold text-white mb-4">Our Proven 5-Step Implementation Process</h2>
                     <p class="lead text-light">
                         A systematic approach ensuring successful deployment of your energy solution
@@ -793,12 +717,49 @@
         </div>
     </section>
 
+
+     <!-- Credibility Bar -->
+     <section class="partners-section">
+        <div class="container">
+            <div class="partners-content">
+                <div class="partners-title" data-aos="fade-up">
+                    <h3>Trusted by Product Providers</h3>
+                </div>
+                <div class="partners-grid" data-aos="fade-up" data-aos-delay="100">
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <img src="../assets/img/partners/sunpower.png" alt="SunPower">
+                        </div>
+                        <span class="partner-name">SunPower</span>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <img src="../assets/img/partners/tesla.png" alt="Tesla">
+                        </div>
+                        <span class="partner-name">Tesla</span>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <img src="../assets/img/partners/lg.png" alt="LG">
+                        </div>
+                        <span class="partner-name">LG</span>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <img src="../assets/img/partners/enphase.png" alt="Enphase">
+                        </div>
+                        <span class="partner-name">Enphase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Success Stories -->
     <section class="success-stories py-5">
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 text-center">
-                    <span class="badge bg-primary-subtle text-primary mb-3">Success Stories</span>
                     <h2 class="display-5 fw-bold mb-4">Real Results from Real Clients</h2>
                     <p class="lead text-muted">
                         Discover how businesses and communities transformed their operations with our solar solutions
@@ -888,8 +849,29 @@
     </section>
 
     <!-- Final CTA -->
-    <section class="cta-section py-5 bg-primary text-white">
-        <!-- Add final CTA content -->
+    <section class="other-solutions-cta py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold text-white mb-4">Explore More Solutions</h2>
+                    <p class="lead text-light mb-5">Discover our complete range of innovative solutions designed to meet your business needs.</p>
+                    <div class="cta-buttons d-flex flex-wrap justify-content-center gap-3">
+                        <a href="../products.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-box me-2"></i>
+                            View Our Products
+                        </a>
+                        <a href="../template.html#solutions" class="btn btn-primary btn-lg">
+                            <i class="fas fa-th-large me-2"></i>
+                            All Solutions
+                        </a>
+                        <a href="../about.html" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-info-circle me-2"></i>
+                            Learn About Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer will be loaded via JavaScript -->
